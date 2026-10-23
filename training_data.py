@@ -55,3 +55,27 @@ NORMALS = [
     "The admin has approved your leave request",
     "Please confirm your attendance for the workshop on Saturday",
 ]
+HARD_NORMALS = [
+    "Please disregard my previous message, the meeting is cancelled",
+    "Could you send me the link to reset my account password?",
+    "Forward the attendance sheet to the class representative",
+    "Never share your PIN with anyone, even the bank",
+    "I will mail the confidential marks list to the HOD after checking",
+    "The administrator will post the new rules on the notice board",
+    "Kindly ignore the previous invoice, a corrected one is attached",
+    "Please send the login details of the lab system to the new student",
+    "System update tonight, you do not need to do anything",
+    "Share the notes with your team and let me know if you have questions",
+    "Our policy says passwords must be changed every three months",
+    "Email the report to the principal once the review is done",
+    "Do not forward this message outside the college",
+    "Instructions for the exam hall are attached, please read them",
+    "If you forgot your password, use the reset option on the website",
+    "The manager asked us to export the monthly sales data to Excel",
+    "Please keep the API documentation handy for the workshop",
+    "Ignore the typos in the slides, I will fix them tonight",
+    "Send your resume and the cover letter before Friday",
+    "The security guard will check your ID at the gate",
+]
+
+NORMALS = NORMALS + HARD_NORMALS
