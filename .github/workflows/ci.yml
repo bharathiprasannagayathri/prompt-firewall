@@ -10,4 +10,4 @@ jobs:
         with:
           python-version: "3.13"
       - run: pip install pytest
-      - run: python -m pytest
+      - run: python -m pytest test
