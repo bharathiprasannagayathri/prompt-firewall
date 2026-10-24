@@ -2,15 +2,16 @@
 # Firewall v1: rule-based scanner for prompt injection.
 import re
 
+
 RULES = [
     ("override_instruction",
-     r"ignore (all |your )?(previous|prior|above) instructions"),
+     r"\b(ignore|disregard|forget|override)\s+(all\s+|your\s+)?(previous|prior|above|earlier)\s+(instructions|rules)\b"),
     ("send_secret",
-     r"send .*(password|passwords|private data|secret|api key)"),
+     r"\b(send|share|reveal|email|forward|export|leak)\b.{0,100}\b(passwords?|private data|secrets?|api keys?|tokens|credentials)\b"),
     ("reveal_prompt",
-     r"(reveal|show|print) .*(system prompt|hidden instructions)"),
+     r"\b(reveal|show|print|expose|disclose)\b.{0,100}\b(system prompt|hidden instructions|secret instructions)\b"),
     ("role_change",
-     r"(you are now|pretend to be)"),
+     r"\b(you are now an unrestricted assistant|pretend to be an unrestricted assistant|act as an unrestricted assistant)\b"),
 ]
 
 def scan(text):
